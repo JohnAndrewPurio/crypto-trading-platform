@@ -32,14 +32,11 @@ function App() {
   }
 
   const handleData = async (data) => {
-    const arr = [...coinData]
-    arr.push(data)
-
-    setCoinData(arr)
+    setCoinData(data)
   }
 
-  const coinClickHandler = (index) => {
-    console.log(index, coinData)
+  const coinClickHandler = (coin) => {
+    console.log(coin) // coin contains the data about the selected cryptocurrency in the list
   }
 
   useEffect(() => {
@@ -65,7 +62,7 @@ function App() {
           <Transactions />
         </div>
 
-        <Form />
+        {/* <Form /> */}
       </CoinContext.Provider>
     </div>
   );
