@@ -1,0 +1,24 @@
+.coin-card {
+    display: flex;
+    padding: 2vmin;
+    border-radius: 1vmin;
+    height: 15vmin;
+    width: 30vmin;
+    box-shadow: 0 0 1vmin gray;
+}
+
+.coin-card img {
+    object-fit: cover;
+    width: 35%;
+    height: 100%;
+}
+
+.coin-card .desc {
+    font-size: 0.6rem;
+    margin: 1vmin;
+    height: 100%;
+}
+
+.desc * {
+    margin: 0;
+}

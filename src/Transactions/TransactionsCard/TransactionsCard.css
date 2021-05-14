@@ -1,0 +1,15 @@
+.transactions-card {
+    padding: 2vmin;
+    border-radius: 1vmin;
+    box-shadow: 0 0 1vmin gray;
+    font-size: 0.9rem;
+    height: 15vmin;
+}
+
+.transaction-buy {
+    border-left: 1vmin solid green;
+}
+
+.transaction-sell {
+    border-left: 1vmin solid red;
+}

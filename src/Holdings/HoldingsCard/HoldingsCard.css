@@ -1,0 +1,8 @@
+.holdings-card {
+    padding: 2vmin;
+    height: 15vmin;
+    width: 40vmin;
+    box-shadow: 0 0 1vmin gray;
+    border-radius: 1vmin;
+    font-size: 0.9rem;
+}
