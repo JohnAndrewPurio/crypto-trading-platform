@@ -1,4 +1,5 @@
 import HoldingsCard from "./HoldingsCard/HoldingsCard";
+import './Holdings.css'
 
 export default function Holdings() {
     return (

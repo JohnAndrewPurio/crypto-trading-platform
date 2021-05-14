@@ -1,4 +1,14 @@
 .coins-list {
     display: flex;
     gap: 1vmin;
+    background-color: white;
+    height: 25%;
+    padding: 2vmin;
+    overflow-x: auto;
+    max-width: 60%;
+}
+
+.coins-list img {
+    object-fit: contain;
+    height: 100%;
 }

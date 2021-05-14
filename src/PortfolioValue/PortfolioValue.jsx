@@ -1,3 +1,5 @@
+import './PortfolioValue.css'
+
 export default function PortfolioValue() {
     return (
         <div className="portfolio-value">

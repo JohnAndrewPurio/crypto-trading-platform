@@ -2,9 +2,10 @@
     display: flex;
     padding: 2vmin;
     border-radius: 1vmin;
-    height: 15vmin;
-    width: 30vmin;
+    height: 100%;
+    min-width: 33%;
     box-shadow: 0 0 1vmin gray;
+    background-color: white;
 }
 
 .coin-card img {

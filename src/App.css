@@ -7,19 +7,25 @@
 }
 
 .App {
+  position: relative;
   font-family: 'Poppins', sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   flex-direction: column;
+  background-image: url('./images/bg.svg');
+  padding: 3vmin;
 
-  gap: 1vmin;
+  gap: 1.5vmin;
 }
 
 .App .transaction-status {
   display: flex;
   gap: 2vmin;
+  height: 60%;
+  width: 60%;
+  justify-content: center;
 }
 
 .profit {
