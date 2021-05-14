@@ -9,3 +9,10 @@ export default function TransactionsCard() {
         </div>
     )
 }
+
+// const onSubmitOutputObject = {
+//      coinName: 'DogeCoin',
+//      coinAmount : 1000,
+//      totalPaid: 1000,
+//      dateBought: '14/06/2021, 10:40:27'
+// }

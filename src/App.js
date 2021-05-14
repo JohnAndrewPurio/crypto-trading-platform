@@ -12,7 +12,9 @@ import Form from './Form/Form'
 
 const coinsList_URL = 'https://api.coingecko.com/api/v3/coins/'
 const defaultData = {
-  wallet: 100, portfolioValue: 0, currentHoldings: [], transactions: []
+  wallet: 100, 
+  portfolioValue: 0, 
+  submittedData: []
 }
 
 function App() {
@@ -39,12 +41,27 @@ function App() {
     console.log(coin) // coin contains the data about the selected cryptocurrency in the list
   }
 
+  const onSubmitHandler = (coinName, coinAmount, totalPaid, dateBought) => {
+    const onSubmitOutput = {
+      coinName: coinName,
+      coinAmount : coinAmount,
+      totalPaid: totalPaid,
+      dateBought: dateBought
+    }
+    const { submittedData } = userData
+    const currentData = [...submittedData]
+
+    currentData.push(onSubmitOutput)
+
+    setUserData( {...userData, submittedData: currentData} )
+  }
+
   useEffect(() => {
       getAvailableCoins(coinsList_URL)
 
       setEventHandlers({
-        ...eventHandlers, 
-        coinClickHandler: coinClickHandler
+        coinClickHandler: coinClickHandler,
+        onSubmitHandler: onSubmitHandler
       })
 
       // eslint-disable-next-line

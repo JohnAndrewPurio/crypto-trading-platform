@@ -1,6 +1,14 @@
+import { useContext } from 'react'
+import CoinContext from '../../contexts/CoinContext'
+
 import './HoldingsCard.css'
 
+
 export default function HoldingsCard() {
+    const { coinData } = useContext(CoinContext)
+    const { market_data } = coinData
+    const { current_price } = market_data
+
     return (
         <div className="holdings-card">
             <h3>Dogecoin: 50</h3>
