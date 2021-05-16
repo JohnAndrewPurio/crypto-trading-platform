@@ -10,9 +10,7 @@ export default function HoldingsCard({data}) {
 
     const currentValue = (current_price.usd * data.coinAmount).toFixed(2)
     const profitOrLoss = (currentValue - data.totalPaid).toFixed(2)
-
-    console.log(current_price.usd)
-
+    
     return (
         <div className="holdings-card">
             <h3>{data.coinName}: {data.coinAmount}</h3>

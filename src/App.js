@@ -20,8 +20,15 @@ const defaultData = {
       coinAmount : 1000,
       totalPaid: 500,
       dateBought: Date.parse( Date.now() )
+    },
+    {
+      coinName: 'Dogecoin',
+      coinAmount : 1000,
+      totalPaid: 500,
+      dateBought: Date.parse( Date.now() )
     }
   ]
+
 }
 
 function App() {
