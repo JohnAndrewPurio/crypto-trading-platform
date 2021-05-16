@@ -8,7 +8,7 @@ import Transactions from './Transactions/Transactions';
 import Title from './Title/Title'
 import Wallet from './Wallet/Wallet';
 import PortfolioValue from './PortfolioValue/PortfolioValue';
-import Form from './Form/Form'
+// import Form from './Form/Form'
 
 const coinsList_URL = 'https://api.coingecko.com/api/v3/coins/'
 const defaultData = {
@@ -23,6 +23,30 @@ const defaultData = {
     },
     {
       coinName: 'Dogecoin',
+      coinAmount : 1000,
+      totalPaid: 500,
+      dateBought: Date.parse( Date.now() )
+    },
+    {
+      coinName: 'Dogecoin',
+      coinAmount : 1000,
+      totalPaid: 500,
+      dateBought: Date.parse( Date.now() )
+    },
+    {
+      coinName: 'Dogecoin',
+      coinAmount : 1000,
+      totalPaid: 500,
+      dateBought: Date.parse( Date.now() )
+    },
+    {
+      coinName: 'Dogecoin',
+      coinAmount : 1000,
+      totalPaid: 500,
+      dateBought: Date.parse( Date.now() )
+    },
+    {
+      coinName: 'Bitcoin',
       coinAmount : 1000,
       totalPaid: 500,
       dateBought: Date.parse( Date.now() )
