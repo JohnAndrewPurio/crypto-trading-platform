@@ -14,7 +14,14 @@ const coinsList_URL = 'https://api.coingecko.com/api/v3/coins/'
 const defaultData = {
   wallet: 100, 
   portfolioValue: 0, 
-  submittedData: []
+  submittedData: [
+    {
+      coinName: 'Dogecoin',
+      coinAmount : 1000,
+      totalPaid: 500,
+      dateBought: Date.parse( Date.now() )
+    }
+  ]
 }
 
 function App() {
